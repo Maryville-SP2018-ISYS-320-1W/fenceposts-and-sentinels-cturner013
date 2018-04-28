@@ -15,6 +15,17 @@ public class P1_FindMinAndMax {
         int min = Integer.MAX_VALUE;
         
         // YOUR CODE STARTS HERE
+        int sentinel = -1;
+        	System.out.print("Type a number (or " + sentinel + " to stop): ");
+        
+        int input = console.nextInt();
+        while (input !=sentinel) {
+        	     if (input < min) {
+        	    	  min = input;
+        	     }else if (input > max) {
+        	    	 max = input;
+        	     }
+        }
 
 
         // YOUR CODE ENDS HERE
